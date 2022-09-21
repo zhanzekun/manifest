@@ -1,0 +1,77 @@
+<manifest>
+  <remote
+    name="noslate"
+    alias="origin"
+    fetch="https://github.com/noslate-project"
+    pushurl="ssh://git@github.com/noslate-project"/>
+  <remote
+    name="github"
+    alias="origin"
+    fetch="https://github.com"/>
+  <default remote="noslate" revision="main"/>
+
+  <!-- MARK: Basic -->
+  <project name="alice" groups="base"/>
+  <project name="aworker" groups="base"/>
+  <project name="build" groups="base">
+    <linkfile src="node_modules" dest="node_modules"/>
+    <linkfile src=".clang-format" dest=".clang-format"/>
+    <linkfile src=".editorconfig" dest=".editorconfig"/>
+    <linkfile src="CPPLINT.cfg" dest="CPPLINT.cfg"/>
+    <linkfile src="build.mk" dest="Makefile"/>
+  </project>
+  <project name="noslate" groups="base"/>
+  <project name="turf" groups="base"/>
+
+  <project name="libyuv" />
+
+  <!-- MARK: Vendor -->
+  <project
+    path="node"
+    name="nodejs/node"
+    remote="github"
+    groups="vendor"
+    revision="v16.x"/>
+  <project
+    path="vendor/cpplint"
+    name="cpplint/cpplint"
+    remote="github"
+    groups="vendor"
+    revision="refs/tags/1.5.4"/>
+  <project
+    path="vendor/curl"
+    name="curl/curl"
+    remote="github"
+    groups="vendor"
+    revision="refs/tags/curl-7_80_0"/>
+  <project
+    path="vendor/cwalk"
+    name="likle/cwalk"
+    remote="github"
+    groups="vendor"
+    revision="refs/tags/v1.2.5"/>
+  <project
+    path="vendor/googletest"
+    name="google/googletest"
+    remote="github"
+    groups="vendor"
+    revision="refs/tags/release-1.10.0"/>
+  <project
+    path="vendor/gyp-next"
+    name="nodejs/gyp-next"
+    remote="github"
+    groups="vendor"
+    revision="refs/tags/v0.6.2"/>
+  <project
+    path="vendor/protobuf"
+    name="protocolbuffers/protobuf"
+    remote="github"
+    groups="vendor"
+    revision="refs/tags/v2.6.1"/>
+  <project
+    path="vendor/wpt"
+    name="web-platform-tests/wpt"
+    remote="github"
+    groups="vendor"
+    revision="313f99aafa6620894b8d7a7acc6e015b9548e179"/>
+</manifest>
