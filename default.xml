@@ -11,7 +11,7 @@
   <default remote="noslate" revision="main"/>
 
   <!-- MARK: Basic -->
-  <project name="alice" groups="base"/>
+  <project name="noslated" groups="base"/>
   <project name="aworker" groups="base"/>
   <project name="build" groups="base">
     <linkfile src="node_modules" dest="node_modules"/>
