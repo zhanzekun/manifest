@@ -32,7 +32,7 @@ See [Repo Command Reference][] for command line reference for repo.
 
 ```bash
 $ cd workspace/noslate
-$ repo init -u git@github.com:noslate-project/manifest.git
+$ repo init -u https://github.com/noslate-project/manifest.git
 $ repo sync
 ```
 
