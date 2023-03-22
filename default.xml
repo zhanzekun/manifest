@@ -33,6 +33,12 @@
     groups="vendor"
     revision="refs/tags/v16.18.1"/>
   <project
+    path="vendor/ada"
+    name="ada-url/ada"
+    remote="github"
+    groups="vendor"
+    revision="refs/tags/v1.0.4"/>
+  <project
     path="vendor/cpplint"
     name="cpplint/cpplint"
     remote="github"
