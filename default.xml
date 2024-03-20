@@ -31,7 +31,7 @@
     name="nodejs/node"
     remote="github"
     groups="vendor"
-    revision="refs/tags/v16.18.1"/>
+    revision="refs/tags/v20.11.1"/>
   <project
     path="vendor/ada"
     name="ada-url/ada"
